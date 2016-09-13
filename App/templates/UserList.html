@@ -1,0 +1,22 @@
+<div ui-view>
+
+<div style="text-align: center">
+  <div style="display: inline-block; float: left"><h2>Users</h2></div>
+  <div style="display: inline-block; float: right"><button style="display: inline-block" class="add" ui-sref="addUser">
+    <i class="fa fa-plus" aria-hidden="true"></i> Add User</button>
+  </div>
+</div>
+
+<table ng-table="tableParams" class="table" >
+  <tr ng-repeat="user in $data">
+    <td><img ng-src={{user.pic}} id="img" ui-sref="viewUser({user: user})"></td>
+    <td title="'Name'">{{user.name}}</td>
+    <td title="'Email'" > {{user.email}}</td>
+    <td title="'City'">{{user.name}}</td>
+    <td title="'Company'" > {{user.email}}</td>
+
+  </tr>
+</table>
+
+
+</div>

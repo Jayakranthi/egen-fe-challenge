@@ -1,0 +1,36 @@
+<div style="display: inline-block; float: right"><button ui-sref= "userList" style="display: inline-block" class="add">
+  <i class="fa fa-angle-left" aria-hidden="true"></i> Back</button>
+</div>
+
+
+<div class="row col-lg-12">
+    <div style="margin-left: 50px" class="col-lg-6">
+        <div>
+            <h3 class="textClr">Name</h3>
+            <h3>{{user.name}}</h3>
+        </div>
+
+        <div>
+          <h3 class="textClr">Email</h3>
+          <h3>{{user.email}}</h3>
+        </div>
+
+        <div>
+          <h3 class="textClr">Address</h3>
+          <h3>{{user.address}}</h3>
+        </div>
+
+        <div>
+          <h3 class="textClr">Company</h3>
+          <h3>{{user.company}}</h3>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">&nbsp;</div>
+    </div>
+    <div class="col-lg-6" style="width: 40%; height: 40%">
+       <img ng-src={{user.profilepic}} style="border: 3px solid #ff6600; border-radius: 0% ; height: 500px ; width: 500px">
+    </div>
+</div>
+<div class="row col-lg-12">
+  <button type="button" class="add" ng-click="deleteUser(user.id)" style="background: #f6aa46; color: #ffffff">Delete User</button>
+</div>

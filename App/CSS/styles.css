@@ -1,0 +1,125 @@
+@font-face {
+  font-family: userCSS;
+  src:url('https://fonts.googleapis.com/css?family=Lato:400,700');
+}
+
+
+body{
+  font-family: userCSS;
+  background: #f5f5f5;
+}
+
+.container-fluid{
+  height: 90%;
+
+}
+
+.table{
+  height: 90%;
+  background: white;
+}
+
+.navdefault{
+  padding: 10px;
+  height: 70px;
+  border-color: #f5f5f5;
+  background: #ffffff;
+}
+
+.brand{
+  display: inline-block;
+}
+
+.table thead th {
+  text-align: left;/*change that parameter to left/right*/
+  border-bottom: 2px solid #ff6600;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ff6600;
+}
+.table>thead>tr>th{
+  border-bottom: 2px solid #ff6600;
+}
+.table>tbody>tr>td {
+  border-top: 1px solid #ff6600;/*change that parameter to left/right*/
+}
+
+.add{
+  color: #ff6600;
+  font-size: 20px;
+  background: #f5f5f5;
+  border: 1px solid #ff6600;
+  margin-left: 40px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50% ;
+  border: 1px solid #ff6600;
+  cursor: pointer;
+}
+.form-control{
+  margin-right: 20px;
+}
+
+.textClr{
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.sidebar {
+  position : absolute;
+  top : 0;
+  right : -200px;;
+  transition : 100ms left;
+  height: 100%;
+  background-color : rgba(85, 93, 104, 0.95);
+}
+.navigation-toggle {
+  position : absolute;
+  right : 200px;
+  background : #ff6600;
+  color : white;
+  text-decoration : none;
+  padding : 20px;
+}
+.hide{
+  display: none;
+}
+
+.margin{
+  position : absolute;
+  right : 0px;
+  background : #ff6600;
+  color : white;
+  text-decoration : none;
+  padding : 20px;
+}
+
+.show {
+  right : 0;
+}
+.navigation {
+  list-style : none;
+  padding : 0;
+  margin : 0;
+}
+.navigation-items a {
+  display : block;
+  background-color : rgba(85, 93, 104, 0.95);
+  color : white;
+  font-weight: bold;
+  font-size: 20px;
+  line-height : 3em;
+  text-decoration : none;
+  padding : 10px 30px;
+  width : 200px;
+}
+.navigation-items a:hover {
+  background-color : #222;
+}

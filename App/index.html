@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" id="ng-app" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" id="ng-app" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" id="ng-app" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" id="ng-app" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!--<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<script src="app.js"></script>--->
+
+<body>
+
+<!--<link rel="stylesheet" href="bower_components/angular/angular-csp.css">
+<link rel="stylesheet" href="bower_components/ng-table/dist/ng-table.css">
+<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+<!--<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/ng-table/dist/ng-table.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+
+<link rel="stylesheet" href="minified.css">
+<link rel="stylesheet" href="CSS/styles.css">
+
+<script src="minified.js"></script>
+
+<script src="app.js"></script>
+<script src="JS/controllers/UsersList.js"></script>
+<script src="JS/services/RestSrvc.js"></script>
+<script src="JS/directives/sidebarDirective.js"></script>
+
+    <div class="navdefault ">
+          <div class="brand" href="#">
+            <img alt="Brand" src="https://egen.solutions/images/egen-logo.png" height="50" width="50">
+          </div>
+      <div style="float: right; display: inline-block" href="#" ng-class="class" ng-click="toggleState()"><i class="fa fa-bars"></i> </div>
+     <div style="clear: both;"></div>
+    </div>
+
+    <div class="hide" sidebar-directive="state">
+      <h2 class="textClr" style="padding: 15px;">MENU</h2>
+      <ul class="navigation">
+        <li class="navigation-items"> <a ui-sref="userList">Users</a>
+        </li><hr/>
+        <li class="navigation-items"> <a ui-sref="addUser">Add User</a>
+        </li><hr/>
+      </ul>
+    </div>
+
+
+    <div class="container-fluid">
+      <ui-view> </ui-view>
+    </div>
+</body>
+</html>
